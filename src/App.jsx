@@ -122,14 +122,25 @@ function App() {
   return (
     <>
       <style>{`
-        html { font-size: 16px; }
-        body { font-size: 1.02rem; }
+        html { font-size: 14px; }
+        body { font-size: 1.0rem; }
         .site-shell { font-size: 1.05rem; }
         .site-shell p, .site-shell li, .site-shell a,
         .site-shell button, .site-shell small,
         .site-shell .tag, .site-shell .eyebrow,
         .site-shell .project-type, .site-shell .meta-label {
-          font-size: 1.02rem;
+          font-size: 1.0rem;
+        }
+          /* Keep the portfolio tagline comfortably inside the circular hero mark. */
+          .site-shell .visual-core small {
+          display: block;
+          max-width: 175px;
+          margin: 14px auto 0;
+          font-size: 0.82rem;
+          line-height: 1.5;
+          letter-spacing: 0.12em;
+          text-align: center;
+          white-space: normal;
         }
       `}</style>
     <div className="site-shell">
